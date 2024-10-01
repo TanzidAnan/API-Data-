@@ -16,4 +16,6 @@ const shop ={
     isNew:false
 
 }
-console.log(shop)
+console.log(shop);
+const shopJson =JSON.stringify(shop);
+console.log(shopJson)
