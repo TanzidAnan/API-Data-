@@ -4,8 +4,12 @@ function loadUser2(){
     .then(data => userData2(data))
 }
 
-function userData2(data){
-    data.map(item =>{
-        console.log(item.name)
-    })
+function userData2(users){
+    const ul =document.getElementById('users-list')
+   for(const user of users){
+    console.log(user);
+    const li =document.createElement('li');
+    li.innerText =user.name;
+    ul.appendChild(li)
+   }
 }
