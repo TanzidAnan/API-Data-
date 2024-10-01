@@ -11,8 +11,10 @@ function loadPost(posts) {
 
         const div = document.createElement('div');
         div.innerHTML = `
+        <div class="post">
         <h5>user-${post.title}</h5>
         <p>Post-${post.body}</p>
+        <div/>
         `
         divs.appendChild(div)
     }
