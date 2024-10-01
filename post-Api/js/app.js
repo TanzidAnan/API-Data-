@@ -1,10 +1,20 @@
-function loadData(){
+function loadData() {
     fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(data => loadPost(data))
+        .then(res => res.json())
+        .then(data => loadPost(data))
 }
 
-function loadPost(post){
-    console.log(post)
+function loadPost(posts) {
+    const divs = document.getElementById('div-name')
+    for (const post of posts) {
+        console.log(post)
+
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <h5>user-${post.title}</h5>
+        <p>Post-${post.body}</p>
+        `
+        divs.appendChild(div)
+    }
 }
 loadData()
