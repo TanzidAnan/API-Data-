@@ -21,3 +21,9 @@ function loadPost(posts) {
     }
 }
 loadData()
+
+function deletePost(){
+    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        method: 'DELETE',
+      });
+}
