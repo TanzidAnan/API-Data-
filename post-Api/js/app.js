@@ -10,9 +10,10 @@ function loadPost(posts) {
         console.log(post)
 
         const div = document.createElement('div');
+        div.classList.add('posts')
         div.innerHTML = `
         <div class="post">
-        <h5>user-${post.title}</h5>
+        <h5 class="title">user-${post.title}</h5>
         <p>Post-${post.body}</p>
         <div/>
         `
