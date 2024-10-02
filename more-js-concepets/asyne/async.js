@@ -11,3 +11,4 @@ const myLoader =() =>{
 }
 myLoader()
 .then(data => console.log('data',data))
+.catch(err => console.log('Not Data', err))
