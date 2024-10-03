@@ -13,7 +13,7 @@ function loadPost(posts) {
         div.classList.add('posts')
         div.innerHTML = `
         <div class="post">
-        <h5 class="title">user-${post.title}</h5>
+        <h1 class="title">user-${post.title}</h1>
         <p>Post-${post.body}</p>
         <div/>
         `
