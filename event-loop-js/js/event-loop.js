@@ -26,6 +26,14 @@ function z(){
     console.log('z')
     console.log('zz')
 }
+// setInterval(() =>{
+//     a();
+//     clearInterval()
+// },5000)
+
+setTimeout(() =>{
+    console.log('Tanzid Anan')
+},5000)
 
 fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
